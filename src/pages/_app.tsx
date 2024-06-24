@@ -44,11 +44,7 @@ const Gen3App = ({
             sessionConfig={sessionConfig}
             modalsConfig={modalsConfig}
         >
-            <DevSupport ComponentPreviews={ComponentPreviews}
-                        useInitialHook={useInitial}
-            >
-                <Component {...pageProps} />
-            </DevSupport>
+            <Component {...pageProps} />
         </Gen3Provider>
     );
 };
