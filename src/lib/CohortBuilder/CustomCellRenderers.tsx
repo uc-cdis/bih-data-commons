@@ -9,7 +9,7 @@ import { FaExternalLinkAlt } from 'react-icons/fa';
 
 const RenderDiacomLink = ({ cell }: CellRendererFunctionProps) => {
   if (!cell.getValue() || cell.getValue() === '') {
-    return <span></span>
+    return <span></span>;
   } else
     return (
         <a href={`${cell.getValue()}`} target="_blank" rel="noreferrer">
