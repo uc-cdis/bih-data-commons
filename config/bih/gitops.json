@@ -3,9 +3,9 @@
   "graphql": {
     "boardCounts": [
       {
-        "graphql": "_study_count",
-        "name": "Study",
-        "plural": "Studies"
+        "graphql": "_dataset_count",
+        "name": "Dataset",
+        "plural": "Datasets"
       },
       {
         "graphql": "_subject_count",
@@ -13,24 +13,32 @@
         "plural": "Subjects"
       },
       {
-        "graphql": "_sample_count",
-        "name": "Sample",
-        "plural": "Samples"
+        "graphql": "_imaging_study_count",
+        "name": "Imaging Study",
+        "plural": "Imaging Studies"
       },
       {
-        "graphql": "_imaging_file_count",
-        "name": "Imaging File",
-        "plural": "Imaging Files"
+        "graphql": "_imaging_series_count",
+        "name": "Imaging Series",
+        "plural": "Imaging Series"
       }
     ],
     "chartCounts": [
+      {
+        "graphql": "_dataset_count",
+        "name": "Dataset"
+      },
       {
         "graphql": "_subject_count",
         "name": "Subject"
       },
       {
-        "graphql": "_imaging_file_count",
-        "name": "Imaging File"
+        "graphql": "_imaging_study_count",
+        "name": "Imaging Study"
+      },
+      {
+        "graphql": "_imaging_series_count",
+        "name": "Imaging Series"
       }
     ],
     "projectDetails": "boardCounts"

@@ -2,7 +2,7 @@
   {
     "tabTitle": "Series",
     "charts": {
-      "gen3_discovery.commons": {
+      "gen3_discovery.commons_name": {
         "chartType": "fullPie",
         "title": "Platform"
       },
@@ -25,7 +25,7 @@
             "gen3_discovery.BodyPartExamined",
             "gen3_discovery.primary_site",
             "gen3_discovery.disease_type",
-            "gen3_discovery.commons"
+            "gen3_discovery.commons_name"
           ]
         }
       ]
@@ -43,8 +43,10 @@
         "gen3_discovery.BodyPartExamined",
         "gen3_discovery.primary_site",
         "gen3_discovery.disease_type",
-        "gen3_discovery.commons",
+        "gen3_discovery.commons_name",
         "gen3_discovery.collection_id",
+        "gen3_discovery.data_url_doi",
+        "gen3_discovery.license",
         "gen3_discovery.SeriesInstanceUID",
         "gen3_discovery.SeriesDescription"
       ],
@@ -72,17 +74,17 @@
         "gen3_discovery.SeriesInstanceUID": {
           "title": "Series Images"
         },
-        "gen3_discovery.commons": {
+        "gen3_discovery.commons_name": {
           "title": "Platform",
           "type": "link",
           "cellRenderFunction": "linkWithValueMap",
           "params": {
             "valueToURL": {
+              "ACRdart": "https://dart.acr.org/Home/ImagingHub",
               "IDC": "https://portal.imaging.datacommons.cancer.gov/explore/",
               "MIDRC": "https://data.midrc.org",
               "Stanford AIMI": "https://stanfordaimi.azurewebsites.net/",
-              "DART": "https://dart.acr.org/",
-              "ACRdart": "https://dart.acr.org/Home/ImagingHub"
+              "TCIA": "https://www.cancerimagingarchive.net/"
             }
           }
         },
@@ -120,8 +122,16 @@
           "name": "Disease Type"
         },
         {
-          "field": "gen3_discovery.commons",
+          "field": "gen3_discovery.commons_name",
           "name": "Platform"
+        },
+        {
+          "field": "gen3_discovery.license",
+          "name": "License"
+        },
+        {
+          "field": "gen3_discovery.data_url_doi",
+          "name": "DOI"
         },
         {
           "field": "gen3_discovery.collection_id",
@@ -130,9 +140,9 @@
       ],
       "manifestMapping": {
         "resourceIndexType": "metadata",
-        "resourceIdField": "gen3_discovery.StudyInstanceUID",
-        "referenceIdFieldInResourceIndex": "StudyInstanceUID",
-        "referenceIdFieldInDataIndex": "StudyInstanceUID"
+        "resourceIdField": "gen3_discovery.SeriesInstanceUID",
+        "referenceIdFieldInResourceIndex": "SeriesInstanceUID",
+        "referenceIdFieldInDataIndex": "SeriesInstanceUID"
       },
       "accessibleFieldCheckList": ["authz"],
       "accessibleValidationField": "gen3_discovery.authz"
@@ -153,7 +163,7 @@
             "rightIcon": "download",
             "action": "data-json",
             "actionArgs": {
-              "filename": "MIDRC_Series_table.json",
+              "filename": "MIDRC_BIH_Imaging_Series_table.json",
               "rootPath": "gen3_discovery"
             }
           },
@@ -165,7 +175,7 @@
             "rightIcon": "download",
             "action": "data-csv",
             "actionArgs": {
-              "filename": "MIDRC_Series_table.csv",
+              "filename": "MIDRC_BIH_Imaging_Series_table.csv",
               "rootPath": "gen3_discovery"
             }
           }
