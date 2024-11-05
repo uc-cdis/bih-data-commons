@@ -93,10 +93,12 @@
         },
         "license": {
           "title": "License",
+          "type": "link",
           "sortable": false
         },
         "data_url_doi": {
           "title": "DOI",
+          "type": "link",
           "sortable": false
         }
       }
