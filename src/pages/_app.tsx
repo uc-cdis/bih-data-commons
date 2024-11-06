@@ -140,4 +140,4 @@ Gen3App.getInitialProps = async (
         sessionConfig: {},
     };
 };
-export default Gen3App;
+export default withFaroProfiler(Gen3App);

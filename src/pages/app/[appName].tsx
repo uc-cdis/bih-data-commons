@@ -54,7 +54,8 @@ export const getServerSideProps: GetServerSideProps<
   const appName = context.query.appName as string;
 
   try {
-    const config: any = await ContentSource.get(
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const config: Record<string, any> = await ContentSource.get(
       `config/${GEN3_COMMONS_NAME}/apps/${appName}.json`,
     );
 
