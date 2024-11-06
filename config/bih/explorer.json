@@ -94,11 +94,16 @@
         "license": {
           "title": "License",
           "type": "link",
-          "sortable": false
+          "cellRenderFunction": "linkURL",
+          "sortable": false,
+          "params": {
+            "href": ""
+          }
         },
         "data_url_doi": {
           "title": "DOI",
           "type": "link",
+          "cellRenderFunction": "linkURL",
           "sortable": false
         }
       }
