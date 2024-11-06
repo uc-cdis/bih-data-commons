@@ -2,7 +2,7 @@
   {
     "tabTitle": "Series",
     "charts": {
-      "commons": {
+      "commons_name": {
         "chartType": "fullPie",
         "title": "Platform"
       },
@@ -45,6 +45,8 @@
         "disease_type",
         "commons_name",
         "collection_id",
+        "license",
+        "data_url_doi",
         "SeriesInstanceUID",
         "SeriesDescription"
       ],
@@ -78,16 +80,31 @@
           "cellRenderFunction": "linkWithValueMap",
           "params": {
             "valueToURL": {
+              "ACRdart": "https://dart.acr.org/Home/ImagingHub",
               "IDC": "https://portal.imaging.datacommons.cancer.gov/explore/",
               "MIDRC": "https://data.midrc.org",
               "Stanford AIMI": "https://stanfordaimi.azurewebsites.net/",
-              "DART": "https://dart.acr.org/",
-              "ACRdart": "https://dart.acr.org/Home/ImagingHub"
+              "TCIA": "https://www.cancerimagingarchive.net/"
             }
           }
         },
         "collection_id": {
           "title": "Collection"
+        },
+        "license": {
+          "title": "License",
+          "type": "link",
+          "cellRenderFunction": "linkURL",
+          "sortable": false,
+          "params": {
+            "href": ""
+          }
+        },
+        "data_url_doi": {
+          "title": "DOI",
+          "type": "link",
+          "cellRenderFunction": "linkURL",
+          "sortable": false
         }
       }
     },
@@ -126,6 +143,14 @@
         {
           "field": "collection_id",
           "name": "Collection ID"
+        },
+        {
+          "field": "license",
+          "name": "License"
+        },
+        {
+          "field": "data_url_doi",
+          "name": "DOI"
         }
       ],
       "manifestMapping": {
