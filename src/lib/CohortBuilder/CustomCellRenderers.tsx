@@ -10,7 +10,6 @@ import { FaExternalLinkAlt } from 'react-icons/fa';
 
 const RenderLinkCell = (
   { cell }: CellRendererFunctionProps,
-  ...args: Array<Record<string, unknown>>
 ) => {
   return (
     <a
