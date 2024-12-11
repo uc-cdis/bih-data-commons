@@ -38,7 +38,8 @@ COPY ./config ./config
 RUN npm ci
 RUN npm install \
  "@swc/core" \
- "@napi-rs/magic-string"
+ "@napi-rs/magic-string" \
+
 RUN npm run build
 ENV PORT=3000
 CMD bash ./start.sh
