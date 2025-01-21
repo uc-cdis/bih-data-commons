@@ -1,5 +1,359 @@
 [
   {
+    "tabTitle": "Subject",
+    "charts": {
+      "commons_name": {
+        "chartType": "fullPie",
+        "title": "Platform"
+      },
+      "primary_site": {
+        "chartType": "fullPie",
+        "title": "primary_site"
+      }
+    },
+    "filters": {
+      "tabs": [
+        {
+          "title": "Subject Selection",
+          "fields": [
+            "race",
+            "primary_site",
+            "license",
+            "disease_type",
+            "commons_name",
+            "project_id"
+          ]
+        }
+      ]
+    },
+    "table": {
+      "enabled": true,
+      "pageLimit": {
+        "limit": 10000,
+        "label": "Maximum of 10,000 Total Records. Records per Page:"
+      },
+      "fields": [
+        "data_url_doi",
+        "StudyInstanceUID",
+        "StudyDescription",
+        "BodyPartExamined",
+        "primary_site",
+        "disease_type",
+        "commons_name",
+        "collection_id",
+        "license",
+        "data_url_doi",
+        "SeriesInstanceUID",
+        "SeriesDescription"
+      ],
+      "columns": {
+        "StudyInstanceUID": {
+          "title": "Study ID"
+        },
+        "primary_site": {
+          "title": "Primary Site"
+        },
+        "race": {
+          "title": "Race"
+        },
+        "commons_name": {
+          "title": "Platform",
+          "type": "link",
+          "cellRenderFunction": "linkWithValueMap",
+          "params": {
+            "valueToURL": {
+              "ACRdart": "https://dart.acr.org/Home/ImagingHub",
+              "IDC": "https://portal.imaging.datacommons.cancer.gov/explore/",
+              "MIDRC": "https://data.midrc.org",
+              "Stanford AIMI": "https://stanfordaimi.azurewebsites.net/",
+              "TCIA": "https://www.cancerimagingarchive.net/"
+            }
+          }
+        },
+        "collection_id": {
+          "title": "Collection"
+        },
+        "license": {
+          "title": "License",
+          "type": "link",
+          "cellRenderFunction": "linkURL",
+          "sortable": false,
+          "params": {
+            "href": ""
+          }
+        },
+        "data_url_doi": {
+          "title": "DOI",
+          "type": "link",
+          "cellRenderFunction": "linkURL",
+          "sortable": false
+        }
+      }
+    },
+    "guppyConfig": {
+      "dataType": "imaging_series",
+      "nodeCountTitle": "Imaging Series",
+      "fieldMapping": [
+        {
+          "field": "StudyInstanceUID",
+          "name": "Study ID"
+        },
+        {
+          "field": "SeriesDescription",
+          "name": "Series Description"
+        },
+        {
+          "field": "BodyPartExamined",
+          "name": "Body Part Examined"
+        },
+        {
+          "field": "PatientSex",
+          "name": "Gender"
+        },
+        {
+          "field": "primary_site",
+          "name": "Primary Site"
+        },
+        {
+          "field": "disease_type",
+          "name": "Disease Type"
+        },
+        {
+          "field": "commons_name",
+          "name": "Platform"
+        },
+        {
+          "field": "collection_id",
+          "name": "Collection ID"
+        },
+        {
+          "field": "license",
+          "name": "License"
+        },
+        {
+          "field": "data_url_doi",
+          "name": "DOI"
+        }
+      ],
+      "manifestMapping": {
+        "resourceIndexType": "imaging_series",
+        "resourceIdField": "StudyInstanceUID",
+        "referenceIdFieldInResourceIndex": "StudyInstanceUID",
+        "referenceIdFieldInDataIndex": "StudyInstanceUID"
+      },
+      "accessibleFieldCheckList": ["authz"],
+      "accessibleValidationField": "auth_resource_path"
+    },
+    "loginForDownload": false,
+    "dropdowns": {
+      "download-menu": {
+        "enabled": true,
+        "title": "Download Table",
+        "leftIcon": "gen3:download",
+        "rightIcon": "gen3:chevron-down",
+        "dropdownItems": [
+          {
+            "enabled": true,
+            "type": "data-json",
+            "title": "JSON",
+            "leftIcon": "datafile",
+            "rightIcon": "download",
+            "action": "data-json",
+            "actionArgs": {
+              "filename": "BIH_Series_table.json"
+            }
+          },
+          {
+            "enabled": true,
+            "type": "data-csv",
+            "title": "CSV",
+            "leftIcon": "datafile",
+            "rightIcon": "download",
+            "action": "data-csv",
+            "actionArgs": {
+              "filename": "BIH_Series_table.csv"
+            }
+          }
+        ]
+      }
+    },
+    "buttons": []
+  },
+  {
+    "tabTitle": "Studies",
+    "charts": {
+      "commons_name": {
+        "chartType": "fullPie",
+        "title": "Platform"
+      }
+    },
+    "filters": {
+      "tabs": [
+        {
+          "title": "Study Selection",
+          "fields": [
+            "PatientSex",
+            "PatientAge",
+            "EthnicGroup",
+            "primary_site",
+            "license",
+            "commons_name",
+            "project_id"
+          ]
+        }
+      ]
+    },
+    "table": {
+      "enabled": true,
+      "pageLimit": {
+        "limit": 10000,
+        "label": "Maximum of 10,000 Total Records. Records per Page:"
+      },
+      "fields": [
+        "data_url_doi",
+        "StudyInstanceUID",
+        "StudyDescription",
+        "BodyPartExamined",
+        "primary_site",
+        "disease_type",
+        "commons_name",
+        "collection_id",
+        "license",
+        "data_url_doi",
+        "SeriesInstanceUID",
+        "SeriesDescription"
+      ],
+      "columns": {
+        "StudyInstanceUID": {
+          "title": "Study ID"
+        },
+        "primary_site": {
+          "title": "Primary Site"
+        },
+        "race": {
+          "title": "Race"
+        },
+        "commons_name": {
+          "title": "Platform",
+          "type": "link",
+          "cellRenderFunction": "linkWithValueMap",
+          "params": {
+            "valueToURL": {
+              "ACRdart": "https://dart.acr.org/Home/ImagingHub",
+              "IDC": "https://portal.imaging.datacommons.cancer.gov/explore/",
+              "MIDRC": "https://data.midrc.org",
+              "Stanford AIMI": "https://stanfordaimi.azurewebsites.net/",
+              "TCIA": "https://www.cancerimagingarchive.net/"
+            }
+          }
+        },
+        "collection_id": {
+          "title": "Collection"
+        },
+        "license": {
+          "title": "License",
+          "type": "link",
+          "cellRenderFunction": "linkURL",
+          "sortable": false
+        },
+        "data_url_doi": {
+          "title": "DOI",
+          "type": "link",
+          "cellRenderFunction": "linkURL",
+          "sortable": false
+        }
+      }
+    },
+    "guppyConfig": {
+      "dataType": "imaging_series",
+      "nodeCountTitle": "Imaging Series",
+      "fieldMapping": [
+        {
+          "field": "StudyInstanceUID",
+          "name": "Study ID"
+        },
+        {
+          "field": "SeriesDescription",
+          "name": "Series Description"
+        },
+        {
+          "field": "BodyPartExamined",
+          "name": "Body Part Examined"
+        },
+        {
+          "field": "PatientSex",
+          "name": "Gender"
+        },
+        {
+          "field": "primary_site",
+          "name": "Primary Site"
+        },
+        {
+          "field": "disease_type",
+          "name": "Disease Type"
+        },
+        {
+          "field": "commons_name",
+          "name": "Platform"
+        },
+        {
+          "field": "collection_id",
+          "name": "Collection ID"
+        },
+        {
+          "field": "license",
+          "name": "License"
+        },
+        {
+          "field": "data_url_doi",
+          "name": "DOI"
+        }
+      ],
+      "manifestMapping": {
+        "resourceIndexType": "imaging_series",
+        "resourceIdField": "StudyInstanceUID",
+        "referenceIdFieldInResourceIndex": "StudyInstanceUID",
+        "referenceIdFieldInDataIndex": "StudyInstanceUID"
+      },
+      "accessibleFieldCheckList": ["authz"],
+      "accessibleValidationField": "auth_resource_path"
+    },
+    "loginForDownload": false,
+    "dropdowns": {
+      "download-menu": {
+        "enabled": true,
+        "title": "Download Table",
+        "leftIcon": "gen3:download",
+        "rightIcon": "gen3:chevron-down",
+        "dropdownItems": [
+          {
+            "enabled": true,
+            "type": "data-json",
+            "title": "JSON",
+            "leftIcon": "datafile",
+            "rightIcon": "download",
+            "action": "data-json",
+            "actionArgs": {
+              "filename": "BIH_Series_table.json"
+            }
+          },
+          {
+            "enabled": true,
+            "type": "data-csv",
+            "title": "CSV",
+            "leftIcon": "datafile",
+            "rightIcon": "download",
+            "action": "data-csv",
+            "actionArgs": {
+              "filename": "BIH_Series_table.csv"
+            }
+          }
+        ]
+      }
+    },
+    "buttons": []
+  },
+  {
     "tabTitle": "Series",
     "charts": {
       "commons_name": {
@@ -25,7 +379,8 @@
             "BodyPartExamined",
             "primary_site",
             "disease_type",
-            "commons_name"
+            "commons_name",
+            "project_id"
           ]
         }
       ]
