@@ -34,7 +34,6 @@
       },
       "fields": [
         "StudyDescription",
-        "BodyPartExamined",
         "PatientSex",
         "PatientAge",
         "EthnicGroup",
@@ -53,9 +52,6 @@
         "StudyDescription": {
           "title": "Study Description"
         },
-        "BodyPartExamined": {
-          "title": "Body Part Examined"
-        },
         "PatientSex": {
           "title": "Patient Sex"
         },
@@ -67,9 +63,6 @@
         },
         "race": {
           "title": "Race"
-        },
-        "data_contributor": {
-          "title": "Data Contributor"
         },
         "primary_site": {
           "title": "Primary Site"
@@ -94,6 +87,9 @@
         "collection_id": {
           "title": "Collection ID"
         },
+        "data_contributor": {
+          "title": "Data Contributor"
+        },
         "license": {
           "title": "License",
           "type": "link",
@@ -107,7 +103,7 @@
           "sortable": false
         },
         "StudyInstanceUID": {
-          "title": "Study ID"
+          "title": "Study UID"
         },
         "subject_id": {
           "title": "Subject ID"
@@ -121,10 +117,6 @@
         {
           "field": "StudyDescription",
           "name": "Study Description"
-        },
-        {
-          "field": "BodyPartExamined",
-          "name": "Body Part Examined"
         },
         {
           "field": "PatientSex",
@@ -243,7 +235,9 @@
             "race",
             "primary_site",
             "disease_type",
-            "commons_name"
+            "commons_name",
+            "data_contributor",
+            "collection_id"
           ]
         }
       ]
@@ -292,7 +286,7 @@
           "title": "Data Contributor"
         },
         "collection_id": {
-          "title": "Collection"
+          "title": "Collection ID"
         },
         "license": {
           "title": "License",
