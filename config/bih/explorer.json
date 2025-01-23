@@ -498,7 +498,7 @@
           "sortable": false
         },
         "dicom_viewer_url": {
-          "title": "",
+          "title": "DICOM Viewer",
           "type": "link",
           "width" : "32px",
           "cellRenderFunction": "DiacomLink"
