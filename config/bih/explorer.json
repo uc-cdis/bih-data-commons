@@ -495,7 +495,7 @@
           "title": "DICOM Viewer URL",
           "type": "link",
           "width" : "32px",
-          "cellRenderFunction": "DiacomLink"
+          "cellRenderFunction": "DicomLink"
         },
         "subject_id": {
           "title": "Subject ID"

@@ -25,8 +25,7 @@ const RenderLinkCell = (
 };
 
 
-const RenderDicomLink = ({ cell }: CellRendererFunctionProps) => {
-  if (!cell.getValue() || cell.getValue() === '') {
+
 const RenderDicomLink = ({ cell }: CellRendererFunctionProps) => {
   if (!cell?.getValue() || cell?.getValue() === '') {
     return <span></span>;
