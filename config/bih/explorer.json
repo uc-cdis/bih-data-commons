@@ -444,7 +444,7 @@
         "data_url_doi",
         "metadata_source_date",
         "metadata_source_version",
-        "study_viewer_url",
+        "series_viewer_url",
         "subject_id",
         "StudyInstanceUID",
         "SeriesInstanceUID"
