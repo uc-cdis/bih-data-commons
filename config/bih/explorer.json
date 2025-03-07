@@ -107,7 +107,7 @@
           "title": "Metadata Source Version"
         },
         "study_viewer_url": {
-          "title": "Study Viewer URL",
+          "title": "DICOM Viewer URL",
           "type": "link",
           "cellRenderFunction": "linkURL",
           "sortable": false
@@ -178,7 +178,7 @@
         },
         {
           "field": "study_viewer_url",
-          "name": "Study Viewer URL"
+          "name": "DICOM Viewer URL"
         },
         {
           "field": "StudyInstanceUID",
@@ -445,7 +445,6 @@
         "metadata_source_date",
         "metadata_source_version",
         "study_viewer_url",
-        "dicom_viewer_url",
         "subject_id",
         "StudyInstanceUID",
         "SeriesInstanceUID"
@@ -513,16 +512,10 @@
           "title": "Metadata Source Version"
         },
         "series_viewer_url": {
-          "title": "Series Viewer URL",
+          "title": "DICOM Viewer URL",
           "type": "link",
           "cellRenderFunction": "linkURL",
           "sortable": false
-        },
-        "dicom_viewer_url": {
-          "title": "DICOM Viewer URL",
-          "type": "link",
-          "width" : "32px",
-          "cellRenderFunction": "DicomLink"
         },
         "subject_id": {
           "title": "Subject ID"
@@ -593,11 +586,7 @@
         },
         {
           "field": "series_viewer_url",
-          "name": "Series Viewer URL"
-        },
-        {
-          "field": "dicom_viewer_url",
-          "name": "DICOM Viewer"
+          "name": "DICOM Viewer URL"
         },
         {
           "field": "subject_id",
