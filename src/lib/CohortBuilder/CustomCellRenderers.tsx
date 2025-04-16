@@ -19,6 +19,7 @@ const RenderDicomLink = ({ cell }: CellRendererFunctionProps) => {
     );
 };
 
+
 interface LinkCellOptions {
   icon: string;
   color: string;
