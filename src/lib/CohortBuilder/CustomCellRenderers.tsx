@@ -121,7 +121,7 @@ export const registerCohortTableCustomCellRenderers = () => {
   );
   ExplorerTableCellRendererFactory().registerRenderer(
     'link',
-    'LinkWithIcon',
+    'linkWithIcon',
     RenderLinkWithIcon,
   );
 };
