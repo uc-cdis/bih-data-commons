@@ -30,7 +30,7 @@
   "topBar": {
     "items": [
       {
-        "href": "/MDD",
+        "href": "/app/MetadataDictionary",
         "name": "Mesh Metadata Model"
       }
     ],
