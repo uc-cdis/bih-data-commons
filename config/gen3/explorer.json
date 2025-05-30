@@ -724,6 +724,14 @@
       "commons_name": {
         "chartType": "fullPie",
         "title": "Platform"
+      },
+      "disease_type": {
+        "chartType": "fullPie",
+        "title": "Disease Type"
+      },
+      "primary_site": {
+        "chartType": "fullPie",
+        "title": "Primary Anatomic Site"
       }
     },
     "filters": {
