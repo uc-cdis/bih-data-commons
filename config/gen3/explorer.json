@@ -601,6 +601,11 @@
     "guppyConfig": {
       "dataType": "imaging_series",
       "nodeCountTitle": "Imaging Series",
+      "nodeCountConfiguration" : {
+        "none" : "Imaging Series",
+        "one" : "Image Series",
+        "multiple" : "Imaging Series"
+      },
       "fieldMapping": [
         {
           "field": "series_viewer_url",
