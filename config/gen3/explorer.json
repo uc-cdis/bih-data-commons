@@ -20,7 +20,8 @@
             "primary_site",
             "disease_type",
             "commons_name",
-            "collection_id"
+            "collection_id",
+            "loinc_code"
           ]
         }
       ]
@@ -48,7 +49,8 @@
         "metadata_source_date",
         "metadata_source_version",
         "StudyInstanceUID",
-        "subject_id"
+        "subject_id",
+        "loinc_code"
       ],
       "columns": {
         "study_viewer_url": {
@@ -141,6 +143,9 @@
         },
         "subject_id": {
           "title": "Subject ID"
+        },
+        "loinc_code": {
+          "title": "LOINC Code"
         }
       }
     },
@@ -215,6 +220,10 @@
         {
           "field": "subject_id",
           "name": "Subject ID"
+        },
+        {
+          "field": "loinc_code",
+          "name": "LOINC Code"
         }
       ],
       "manifestMapping": {
