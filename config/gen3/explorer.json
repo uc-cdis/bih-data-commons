@@ -20,7 +20,12 @@
             "primary_site",
             "disease_type",
             "commons_name",
-            "collection_id"
+            "collection_id",
+            "loinc_code",
+            "loinc_contrast",
+            "loinc_long_common_name",
+            "loinc_method",
+            "loinc_system"
           ]
         }
       ]
@@ -48,7 +53,12 @@
         "metadata_source_date",
         "metadata_source_version",
         "StudyInstanceUID",
-        "subject_id"
+        "subject_id",
+        "loinc_code",
+        "loinc_contrast",
+        "loinc_long_common_name",
+        "loinc_method",
+        "loinc_system"
       ],
       "columns": {
         "study_viewer_url": {
@@ -141,6 +151,21 @@
         },
         "subject_id": {
           "title": "Subject ID"
+        },
+        "loinc_code": {
+          "title": "LOINC Code"
+        },
+        "loinc_contrast": {
+          "title": "LOINC Contrast"
+        },
+        "loinc_long_common_name": {
+          "title": "LOINC Long Common Name"
+        },
+        "loinc_method": {
+          "title": "LOINC Method"
+        },
+        "loinc_system": {
+          "title": "LOINC System"
         }
       }
     },
@@ -215,6 +240,26 @@
         {
           "field": "subject_id",
           "name": "Subject ID"
+        },
+        {
+          "field": "loinc_code",
+          "name": "LOINC Code"
+        },
+        {
+          "field": "loinc_contrast",
+          "name": "LOINC Contrast"
+        },
+        {
+          "field": "loinc_long_common_name",
+          "name": "LOINC Long Common Name"
+        },
+        {
+          "field": "loinc_method",
+          "name": "LOINC Method"
+        },
+        {
+          "field": "loinc_system",
+          "name": "LOINC System"
         }
       ],
       "manifestMapping": {
