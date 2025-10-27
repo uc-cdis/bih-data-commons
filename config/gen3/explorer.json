@@ -262,7 +262,6 @@
           "name": "LOINC System"
         }
       ],
-      "nodeCountTitle": "Files",
       "manifestMapping": {
         "resourceIndexType": "imaging_study",
         "resourceIdField": "StudyInstanceUID",
