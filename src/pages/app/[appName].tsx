@@ -15,7 +15,7 @@ import {
 } from '@gen3/frontend';
 
 interface AppConfig extends NavPageLayoutProps {
-  config?: object;
+  config?: Record<string, any>;
 }
 
 const AppsPage = ({ headerProps, footerProps, headerMetadata, config }: AppConfig) => {

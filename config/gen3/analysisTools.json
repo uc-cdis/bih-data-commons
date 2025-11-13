@@ -1,6 +1,7 @@
 {
   "tools": [
-    {"title": "Cohort Building and Data Access Using the MIDRC BDF Imaging Hub",
+    {
+      "title": "Cohort Building and Data Access Using the MIDRC BDF Imaging Hub",
       "type": "notebook",
       "icon": "/images/apps/icons/jupyter.png",
       "image": "/images/apps/cohort_building_thumbnail.png",
