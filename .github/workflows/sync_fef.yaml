@@ -8,6 +8,8 @@ on:
   schedule:
   - cron: '0 3 1,23 * *'
 
+  push: # temp for testing
+
 jobs:
   sync:
-    uses: uc-cdis/.github/.github/workflows/gen3_Sync_FeF.yaml@feat/Frontend-sync-yaml/pauline
+    uses: uc-cdis/.github/.github/workflows/gen3_Sync_FeF.yaml@paulineribeyre-patch-1
