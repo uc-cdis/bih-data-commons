@@ -5,10 +5,9 @@ on:
   workflow_dispatch:
 
   # 2. Runs on a schedule (the 1st of the month and the 23rd to pick up any changes)
-  schedule:
-  - cron: '0 3 1,23 * *'
-
-  push: # temp for testing
+  # TODO: enable once the workflow works
+  #schedule:
+  #- cron: '0 3 1,23 * *'
 
 jobs:
   sync:
