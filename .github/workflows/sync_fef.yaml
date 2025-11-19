@@ -12,4 +12,5 @@ on:
 jobs:
   sync:
     uses: uc-cdis/.github/.github/workflows/gen3_Sync_FeF.yaml@paulineribeyre-patch-1
-    permissions: write-all
+    secrets:
+      GH_TOKEN: ${{ secrets.PLANXCYBORG_PAT }}
