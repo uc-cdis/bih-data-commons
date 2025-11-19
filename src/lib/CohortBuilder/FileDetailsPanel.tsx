@@ -104,11 +104,11 @@ export const FileDetailsPanel = ({
 
   // create the rows for the table
   const rows = Object.entries(queryData).map(([field, value]) => (
-    <Table.Tr key={field}>
-      <Table.Td>
+    <tr key={field}>
+      <td>
         <Text fw={700}>{field}</Text>
-      </Table.Td>
-      <Table.Td>
+      </td>
+      <td>
         {/*
           if field is one that we want a link for make it an Anchor otherwise
           render as text.
@@ -125,20 +125,20 @@ export const FileDetailsPanel = ({
         ) : (
           <Text>{value ? (value as string) : ''}</Text>
         )}
-      </Table.Td>
-    </Table.Tr>
+      </td>
+    </tr>
   ));
   return (
     <Stack>
       <LoadingOverlay visible={isLoading} />
-      <Text color="primary.4">Results for {id}</Text>
-      <Table withTableBorder withColumnBorders>
-        <Table.Th>
-          <Table.Td>
-            <Table.Th>Field</Table.Th>
-            <Table.Th>Value</Table.Th>
-          </Table.Td>
-        </Table.Th>
+      <Text c="primary.4">Results for {id}</Text>
+      <Table withColumnBorders>
+        <thead>
+          <tr>
+            <th>Field</th>
+            <th>Value</th>
+          </tr>
+        </thead>
         <tbody>{rows}</tbody>
       </Table>
       <Group justify="flex-end">

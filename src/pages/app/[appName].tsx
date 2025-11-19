@@ -18,7 +18,7 @@ interface AppConfig extends NavPageLayoutProps {
   config?: Record<string, any>;
 }
 
-const AppsPage = ({ headerProps, footerProps, headerMetadata, config }: AppConfig) => {
+const AppsPage = ({ headerProps, footerProps, config }: AppConfig) => {
   const router = useRouter();
   const appName = getAppName(router);
 
@@ -29,10 +29,11 @@ const AppsPage = ({ headerProps, footerProps, headerMetadata, config }: AppConfi
   return (
     <NavPageLayout
       {...{ headerProps, footerProps }}
-      headerMetadata={headerMetadata ?? {
+      headerMetadata={{
         title: 'Gen3 App Page',
         content: 'App Data',
         key: 'gen3-app-page',
+        ...(config?.headerMetadata ? config.headerMetadata : {}),
       }}
     >
       {GdcApp && <GdcApp {...config} />}
