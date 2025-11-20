@@ -1,10 +1,10 @@
 {
-  "name": "@gen3/bih-data-portal",
-  "version": "0.11.55",
+  "name": "@gen3/commons-portal-app-base",
+  "version": "0.11.58",
   "private": "true",
   "engines": {
-    "npm": ">=10.9.0",
-    "node": ">=22.11.0"
+    "npm": ">=10.9.2",
+    "node": ">=22.16.0"
   },
   "scripts": {
     "lint": "next lint",
@@ -25,9 +25,6 @@
     "@fontsource/source-sans-pro": "^5.2.5",
     "@gen3/core": "0.11.58",
     "@gen3/frontend": "0.11.58",
-    "@grafana/faro-react": "^1.9.1",
-    "@grafana/faro-web-sdk": "^1.9.1",
-    "@grafana/faro-web-tracing": "^1.9.1",
     "@mantine/core": "^7.17.8",
     "@mantine/dates": "^7.17.8",
     "@mantine/form": "^7.17.8",
