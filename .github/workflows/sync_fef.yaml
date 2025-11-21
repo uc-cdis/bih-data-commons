@@ -10,6 +10,6 @@ on:
 
 jobs:
   sync:
-    uses: uc-cdis/.github/.github/workflows/gen3_Sync_FeF.yaml@paulineribeyre-patch-1
+    uses: uc-cdis/.github/.github/workflows/gen3_Sync_FeF.yaml@master
     secrets:
       GH_TOKEN: ${{ secrets.PLANXCYBORG_PAT }}
