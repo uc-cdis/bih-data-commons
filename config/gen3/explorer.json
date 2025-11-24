@@ -64,19 +64,20 @@
         "study_viewer_url": {
           "title": "DICOM Viewer URL",
           "type": "link",
-          "cellRenderFunction": "linkWithIcon",
+          "cellRenderFunction": "linkWithIconAndTooltip",
           "width" : "20",
           "sortable": false,
           "params" : {
             "color": "accent.5",
             "size": "md",
-            "variant": "filled"
+            "variant": "filled",
+            "tooltip": true
           }
         },
         "data_url_doi": {
           "title": "DOI",
           "type": "link",
-          "cellRenderFunction": "linkWithIcon",
+          "cellRenderFunction": "linkWithIconAndTooltip",
           "width": "20",
           "sortable": false,
           "params" : {
@@ -88,13 +89,14 @@
         "license": {
           "title": "License",
           "type": "link",
-          "cellRenderFunction": "linkWithIcon",
+          "cellRenderFunction": "linkWithIconAndTooltip",
           "width": "20",
           "sortable": false,
           "params" : {
             "color": "accent.5",
             "size": "md",
             "variant": "filled"
+
           }
         },
         "StudyDescription": {
@@ -354,7 +356,7 @@
         "data_url_doi": {
         "title": "DOI",
         "type": "link",
-        "cellRenderFunction": "linkWithIcon",
+        "cellRenderFunction": "linkWithIconAndTooltip",
           "width" : "20",
           "sortable": false,
           "params" : {
@@ -366,7 +368,7 @@
         "license": {
           "title": "License",
           "type": "link",
-          "cellRenderFunction": "linkWithIcon",
+          "cellRenderFunction": "linkWithIconAndTooltip",
           "width" : "20",
           "sortable": false,
           "params" : {
@@ -548,7 +550,7 @@
         "series_viewer_url": {
           "title": "DICOM Viewer URL",
           "type": "link",
-          "cellRenderFunction": "linkWithIcon",
+          "cellRenderFunction": "linkWithIconAndTooltip",
           "width" : "20",
           "sortable": false,
           "params" : {
@@ -560,7 +562,7 @@
         "data_url_doi": {
           "title": "DOI",
           "type": "link",
-          "cellRenderFunction": "linkWithIcon",
+          "cellRenderFunction": "linkWithIconAndTooltip",
           "width" : "20",
           "sortable": false,
           "params" : {
@@ -572,7 +574,7 @@
         "license": {
           "title": "License",
           "type": "link",
-          "cellRenderFunction": "linkWithIcon",
+          "cellRenderFunction": "linkWithIconAndTooltip",
           "width" : "20",
           "sortable": false,
           "params" : {
@@ -821,7 +823,7 @@
         "data_url_doi": {
           "title": "DOI",
           "type": "link",
-          "cellRenderFunction": "linkWithIcon",
+          "cellRenderFunction": "linkWithIconAndTooltip",
           "width": "20",
           "sortable": false,
           "params" : {
