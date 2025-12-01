@@ -4,7 +4,10 @@
     "charts": {
       "commons_name": {
         "chartType": "fullPie",
-        "title": "Platform"
+        "title": "Platform",
+        "label": {
+          "show": true
+        }
       }
     },
     "filters": {
@@ -315,11 +318,17 @@
     "charts": {
       "commons_name": {
         "chartType": "fullPie",
-        "title": "Platform"
+        "title": "Platform",
+        "label": {
+          "show": true
+        }
       },
       "primary_site": {
         "chartType": "fullPie",
-        "title": "Primary Site"
+        "title": "Primary Site",
+        "label": {
+          "show": true
+        }
       }
     },
     "filters": {
@@ -491,15 +500,24 @@
     "charts": {
       "commons_name": {
         "chartType": "fullPie",
-        "title": "Platform"
+        "title": "Platform",
+        "label": {
+          "show": true
+        }
       },
       "primary_site": {
         "chartType": "fullPie",
-        "title": "Primary Site"
+        "title": "Primary Site",
+        "label": {
+          "show": true
+        }
       },
       "disease_type": {
         "chartType": "fullPie",
-        "title": "Disease Type"
+        "title": "Disease Type",
+        "label": {
+          "show": true
+        }
       }
     },
     "filters": {
@@ -778,11 +796,17 @@
     "charts": {
       "disease_type": {
         "chartType": "fullPie",
-        "title": "Disease Type"
+        "title": "Disease Type",
+        "label": {
+          "show": true
+        }
       },
       "primary_site": {
         "chartType": "fullPie",
-        "title": "Primary Anatomic Site"
+        "title": "Primary Anatomic Site",
+        "label": {
+          "show": true
+        }
       }
     },
     "filters": {
