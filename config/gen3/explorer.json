@@ -68,9 +68,9 @@
           "title": "DICOM Viewer URL",
           "type": "link",
           "cellRenderFunction": "linkWithIconAndTooltip",
-          "width" : "20",
+          "width": "20",
           "sortable": false,
-          "params" : {
+          "params": {
             "color": "accent.5",
             "size": "md",
             "variant": "filled",
@@ -83,7 +83,7 @@
           "cellRenderFunction": "linkWithIconAndTooltip",
           "width": "20",
           "sortable": false,
-          "params" : {
+          "params": {
             "color": "accent.5",
             "size": "md",
             "variant": "filled"
@@ -95,11 +95,10 @@
           "cellRenderFunction": "linkWithIconAndTooltip",
           "width": "20",
           "sortable": false,
-          "params" : {
+          "params": {
             "color": "accent.5",
             "size": "md",
             "variant": "filled"
-
           }
         },
         "StudyDescription": {
@@ -135,7 +134,8 @@
               "NIHCC": "https://www.cc.nih.gov/",
               "OpenNeuro": "https://openneuro.org/",
               "Stanford AIMI": "https://stanfordaimi.azurewebsites.net/",
-              "TCIA": "https://www.cancerimagingarchive.net/"
+              "TCIA": "https://www.cancerimagingarchive.net/",
+              "Zenodo": "https://zenodo.org/"
             }
           }
         },
@@ -363,12 +363,12 @@
       ],
       "columns": {
         "data_url_doi": {
-        "title": "DOI",
-        "type": "link",
-        "cellRenderFunction": "linkWithIconAndTooltip",
-          "width" : "20",
+          "title": "DOI",
+          "type": "link",
+          "cellRenderFunction": "linkWithIconAndTooltip",
+          "width": "20",
           "sortable": false,
-          "params" : {
+          "params": {
             "color": "accent.5",
             "size": "md",
             "variant": "filled"
@@ -378,9 +378,9 @@
           "title": "License",
           "type": "link",
           "cellRenderFunction": "linkWithIconAndTooltip",
-          "width" : "20",
+          "width": "20",
           "sortable": false,
-          "params" : {
+          "params": {
             "color": "accent.5",
             "size": "md",
             "variant": "filled"
@@ -569,9 +569,9 @@
           "title": "DICOM Viewer URL",
           "type": "link",
           "cellRenderFunction": "linkWithIconAndTooltip",
-          "width" : "20",
+          "width": "20",
           "sortable": false,
-          "params" : {
+          "params": {
             "color": "accent.5",
             "size": "md",
             "variant": "filled"
@@ -581,9 +581,9 @@
           "title": "DOI",
           "type": "link",
           "cellRenderFunction": "linkWithIconAndTooltip",
-          "width" : "20",
+          "width": "20",
           "sortable": false,
-          "params" : {
+          "params": {
             "color": "accent.5",
             "size": "md",
             "variant": "filled"
@@ -593,9 +593,9 @@
           "title": "License",
           "type": "link",
           "cellRenderFunction": "linkWithIconAndTooltip",
-          "width" : "20",
+          "width": "20",
           "sortable": false,
-          "params" : {
+          "params": {
             "color": "accent.5",
             "size": "md",
             "variant": "filled"
@@ -666,10 +666,10 @@
     "guppyConfig": {
       "dataType": "imaging_series",
       "nodeCountTitle": "Imaging Series",
-      "nodeCountConfiguration" : {
-        "none" : "Imaging Series",
-        "one" : "Image Series",
-        "multiple" : "Imaging Series"
+      "nodeCountConfiguration": {
+        "none": "Imaging Series",
+        "one": "Image Series",
+        "multiple": "Imaging Series"
       },
       "fieldMapping": [
         {
@@ -850,7 +850,7 @@
           "cellRenderFunction": "linkWithIconAndTooltip",
           "width": "20",
           "sortable": false,
-          "params" : {
+          "params": {
             "color": "accent.5",
             "size": "md",
             "variant": "filled"
