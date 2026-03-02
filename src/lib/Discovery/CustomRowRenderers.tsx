@@ -1,82 +1,84 @@
-'use client';
-import React, { ReactElement } from 'react';
-import { JSONPath } from 'jsonpath-plus';
-import { Badge, Box, Text } from '@mantine/core';
 import {
-  StudyDetailsField,
-  RowRenderFunctionParams,
-  DiscoveryRowRendererFactory,
-  useDiscoveryContext,
-  getTagInfo,
-  TagData,
+  DiscoveryCellRendererFactory,
+  CellRenderFunctionProps,
 } from '@gen3/frontend';
+import { Badge, Text } from '@mantine/core';
+import React from 'react';
+import {
+  MdOutlineCheckCircle as CheckCircleOutlined,
+  MdOutlineRemoveCircleOutline as MinusCircleOutlined,
+} from 'react-icons/md';
+import { isArray } from 'lodash';
+import { JSONObject } from '@gen3/core';
+import { toString } from 'lodash';
+import { FilemapPopup, FilemapInline } from '@/lib/Discovery/Filemap';
 
-const DetailsWithTagsRowRenderer = (
-  { row }: RowRenderFunctionParams,
-  studyPreviewConfig?: StudyDetailsField,
-): ReactElement => {
-  const { discoveryConfig: config } = useDiscoveryContext();
-
-  if (!studyPreviewConfig) {
-    return <React.Fragment></React.Fragment>;
-  }
-  const value =
-    JSONPath({
-      json: row.original,
-      path: studyPreviewConfig.field,
-    }) ??
-    config?.studyPreviewField?.valueIfNotAvailable ??
-    '';
-
-  return (
-    <Box
-      style={{
-        display: 'flex',
-        width: '100%',
-      }}
+/**
+ * Custom cell renderer for the linked study column for HEAL
+ * @param cell
+ */
+export const LinkedStudyCell = ({
+  value: cellValue,
+}: CellRenderFunctionProps<boolean>) => {
+  const value = cellValue as boolean;
+  return value ? (
+    <Badge
+      variant="outline"
+      leftSection={<CheckCircleOutlined />}
+      color="green"
     >
-      <div className="flex flex-col">
-        <Text size="sm" lineClamp={2}>
-          {value}
-        </Text>
-
-        <div className="flex space-x-6 space-y-6 flex-wrap">
-          {row.original?.tags?.map((tagInfo: TagData) => {
-            const { color, display, label } = getTagInfo(tagInfo, config.tags);
-
-            if (tagInfo.name === '') return null; // no tag
-            if (!display) return null;
-            return (
-              <Badge
-                role="button"
-                size="lg"
-                radius="sm"
-                variant="outline"
-                tabIndex={0}
-                aria-label={tagInfo.name}
-                key={tagInfo.name}
-                style={{
-                  borderColor: color,
-                  borderWidth: '3px',
-                  margin: '0.125rem 0.125rem',
-                }}
-              >
-                {label}
-              </Badge>
-            );
-          })}
-        </div>
-      </div>
-    </Box>
+      Linked
+    </Badge>
+  ) : (
+    <Badge leftSection={<MinusCircleOutlined />} color="primary">
+      Not Linked
+    </Badge>
   );
 };
 
-export default DetailsWithTagsRowRenderer;
+const WrappedStringCell = (
+  { value }: CellRenderFunctionProps,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  params?: JSONObject,
+) => {
 
-export const registerDiscoveryStudyPreviewRenderers = () => {
-  DiscoveryRowRendererFactory.registerRowRendererCatalog({
+  if (value === undefined || value === null || toString(value) === '') {
+    return (
+      <Text>
+        {`${
+          params && params?.valueIfNotAvailable
+            ? params?.valueIfNotAvailable
+            : ''
+        }`}{' '}
+      </Text>
+    );
+  }
+
+  const content = value as string | string[];
+  return (
+    <div className="w-40">
+      <span className="break-words whitespace-break-spaces text-md">
+        {isArray(content) ? content.join(', ') : content}
+      </span>
+    </div>
+  );
+};
+
+
+/**
+ * Register custom cell renderers for DiscoveryTable
+ */
+export const registerDiscoveryCustomCellRenderers = () => {
+  DiscoveryCellRendererFactory.registerCellRendererCatalog({
     string: {
-      default: DetailsWithTagsRowRenderer,
+      default: WrappedStringCell,
     },
+    boolean: {
+      LinkedStudyCell,
+    },
+    manifest: {
+      default: FilemapPopup,
+      inline: FilemapInline,
+    }
   });
 };
