@@ -1,6 +1,6 @@
 
 
-This is the base REPOSITORY for Gen3.2 data commons.
+This is the NextJS Application for BIH's data commons.
 
 
 ## Getting Started
@@ -32,7 +32,7 @@ Please see [Styling and Theming](https://github.com/uc-cdis/gen3-frontend-framew
 for more information on setting up and configuring the Gen3 Data Commons Application.
 This documentation is currently less complete than we would like, but we will be adding to it as development progresses.
 
-## Installation
+## Installation for local testing
 
 The minimum node version is set to v20.11.0 only from an LTS perspective.
 Node can be downloaded from the official Node.js site. You may also consider using a [Node version manager](https://docs.npmjs.com/cli/v7/configuring-npm/install#using-a-node-version-manager-to-install-nodejs-and-npm).

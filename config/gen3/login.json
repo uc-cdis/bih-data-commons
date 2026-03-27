@@ -13,7 +13,7 @@
     {
       "type": "markdown",
       "text": "If you have any questions about access or the registration process, please contact [gen3@datacommons.io](mailto:gen3@datacommons.io)",
-      "className": "text-center text-sm"
+      "className": "text-center text-sm mt-10"
     }
   ],
   "image": "images/gene_side_texture.svg",
