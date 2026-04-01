@@ -10,6 +10,7 @@ on:
 
 jobs:
   sync:
+    if: ${{ github.event.repository.fork }}
     uses: uc-cdis/.github/.github/workflows/gen3_Sync_FeF.yaml@master
     secrets:
       GH_TOKEN: ${{ secrets.PLANXCYBORG_PAT }}
