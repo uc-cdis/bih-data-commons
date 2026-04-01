@@ -71,54 +71,6 @@
     "darkest": "#fefefe",
     "min": "#fefefe"
   },
-  "accent-warm": {
-    "max": "#f4f2f5",
-    "lightest": "#dbd3df",
-    "lighter": "#c2b5c8",
-    "light": "#a997b2",
-    "DEFAULT": "#90799b",
-    "vivid": "#946da7",
-    "dark": "#705e78",
-    "darker": "#4f4355",
-    "darkest": "#2f2732",
-    "min": "#0e0c10"
-  },
-  "accent-warm-contrast": {
-    "max": "#111111",
-    "lightest": "#111111",
-    "lighter": "#111111",
-    "light": "#111111",
-    "DEFAULT": "#111111",
-    "vivid": "#111111",
-    "dark": "#fefefe",
-    "darker": "#fefefe",
-    "darkest": "#fefefe",
-    "min": "#fefefe"
-  },
-  "accent-cool": {
-    "max": "#f4f2f5",
-    "lightest": "#dbd3df",
-    "lighter": "#c2b5c8",
-    "light": "#a997b2",
-    "DEFAULT": "#90799b",
-    "vivid": "#946da7",
-    "dark": "#705e78",
-    "darker": "#4f4355",
-    "darkest": "#2f2732",
-    "min": "#0e0c10"
-  },
-  "accent-cool-contrast": {
-    "max": "#111111",
-    "lightest": "#111111",
-    "lighter": "#111111",
-    "light": "#111111",
-    "DEFAULT": "#111111",
-    "vivid": "#111111",
-    "dark": "#fefefe",
-    "darker": "#fefefe",
-    "darkest": "#fefefe",
-    "min": "#fefefe"
-  },
   "base": {
     "max": "#fafafa",
     "lightest": "#eeeeee",
@@ -139,6 +91,78 @@
     "DEFAULT": "#111111",
     "vivid": "#111111",
     "dark": "#111111",
+    "darker": "#fefefe",
+    "darkest": "#fefefe",
+    "min": "#fefefe"
+  },
+  "accentWarm": {
+    "max": "#f4f2f5",
+    "lightest": "#dbd3df",
+    "lighter": "#c2b5c8",
+    "light": "#a997b2",
+    "DEFAULT": "#90799b",
+    "vivid": "#946da7",
+    "dark": "#705e78",
+    "darker": "#4f4355",
+    "darkest": "#2f2732",
+    "min": "#0e0c10"
+  },
+  "accentWarm-contrast": {
+    "max": "#111111",
+    "lightest": "#111111",
+    "lighter": "#111111",
+    "light": "#111111",
+    "DEFAULT": "#111111",
+    "vivid": "#111111",
+    "dark": "#fefefe",
+    "darker": "#fefefe",
+    "darkest": "#fefefe",
+    "min": "#fefefe"
+  },
+  "accentCool": {
+    "max": "#f4f2f5",
+    "lightest": "#dbd3df",
+    "lighter": "#c2b5c8",
+    "light": "#a997b2",
+    "DEFAULT": "#90799b",
+    "vivid": "#946da7",
+    "dark": "#705e78",
+    "darker": "#4f4355",
+    "darkest": "#2f2732",
+    "min": "#0e0c10"
+  },
+  "accentCool-contrast": {
+    "max": "#111111",
+    "lightest": "#111111",
+    "lighter": "#111111",
+    "light": "#111111",
+    "DEFAULT": "#111111",
+    "vivid": "#111111",
+    "dark": "#fefefe",
+    "darker": "#fefefe",
+    "darkest": "#fefefe",
+    "min": "#fefefe"
+  },
+  "chart": {
+    "max": "#e7f4f6",
+    "lightest": "#b0dde0",
+    "lighter": "#7ac5cb",
+    "light": "#43adb6",
+    "DEFAULT": "#0d95A1",
+    "vivid": "#049caa",
+    "dark": "#0a737d",
+    "darker": "#075259",
+    "darkest": "#043034",
+    "min": "#010f10"
+  },
+  "chart-contrast": {
+    "max": "#111111",
+    "lightest": "#111111",
+    "lighter": "#111111",
+    "light": "#111111",
+    "DEFAULT": "#111111",
+    "vivid": "#111111",
+    "dark": "#fefefe",
     "darker": "#fefefe",
     "darkest": "#fefefe",
     "min": "#fefefe"
@@ -166,53 +190,5 @@
     "category2": "#000000",
     "category3": "#f1f1f1",
     "category4": "#1b1b1b"
-  },
-  "chart": {
-    "max": "#e7f4f6",
-    "lightest": "#b0dde0",
-    "lighter": "#7ac5cb",
-    "light": "#43adb6",
-    "DEFAULT": "#0d95A1",
-    "vivid": "#049caa",
-    "dark": "#0a737d",
-    "darker": "#075259",
-    "darkest": "#043034",
-    "min": "#010f10"
-  },
-  "chart-contrast": {
-    "max": "#111111",
-    "lightest": "#111111",
-    "lighter": "#111111",
-    "light": "#111111",
-    "DEFAULT": "#111111",
-    "vivid": "#111111",
-    "dark": "#fefefe",
-    "darker": "#fefefe",
-    "darkest": "#fefefe",
-    "min": "#fefefe"
-  },
-  "table": {
-    "max": "#ffffff",
-    "lightest": "#ffffff",
-    "lighter": "#ffffff",
-    "light": "#ffffff",
-    "DEFAULT": "#ffffff",
-    "vivid": "#ffffff",
-    "dark": "#c6c6c6",
-    "darker": "#8c8c8c",
-    "darkest": "#535353",
-    "min": "#191919"
-  },
-  "table-contrast": {
-    "max": "#111111",
-    "lightest": "#111111",
-    "lighter": "#111111",
-    "light": "#111111",
-    "DEFAULT": "#111111",
-    "vivid": "#111111",
-    "dark": "#111111",
-    "darker": "#111111",
-    "darkest": "#fefefe",
-    "min": "#fefefe"
   }
 }
