@@ -15161,7 +15161,7 @@ Increase if you have fast network/IO; decrease on slower links or to be gentler 
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Build-manifests-and-quicklook-PNGs-for-MIDAS-(photos)-and-CPTAC-(DICOM)-&#8212;-post-download-prep">Build manifests and quicklook PNGs for MIDAS (photos) and CPTAC (DICOM) &#8212; post-download prep<a class="anchor-link" href="#Build-manifests-and-quicklook-PNGs-for-MIDAS-(photos)-and-CPTAC-(DICOM)-&#8212;-post-download-prep">&#182;</a></h2><p><strong>Why this step?</strong><br>
-After downloading the raw files, we need (1) a clean <strong>manifest</strong> for MIDAS photos with labels we can train on, and (2) a compact, visual <strong>PNG summary</strong> for each CPTAC DICOM series so we can browse/score without loading full DICOM stacks. Yes—this is exactly what you typically do right after data download.</p>
+After downloading the raw files, we need (1) a clean <strong>manifest</strong> for MIDAS photos with labels we can train on, and (2) a compact, visual <strong>PNG summary</strong> for each CPTAC DICOM series so we can browse/score without loading full DICOM stacks.</p>
 <hr>
 <h3 id="A)-MIDAS-manifest-from-Excel-+-file-system">A) MIDAS manifest from Excel + file system<a class="anchor-link" href="#A)-MIDAS-manifest-from-Excel-+-file-system">&#182;</a></h3><p><strong>Inputs</strong></p>
 <ul>
@@ -15223,7 +15223,7 @@ After downloading the raw files, we need (1) a clean <strong>manifest</strong> f
 <li><code>data/tcia/CPTAC-CM_png/&lt;series_uid&gt;/slice_00.png, slice_01.png, slice_02.png</code></li>
 </ul>
 <p><strong>Conclusion:</strong><br>
-Yes—running this immediately after download is sensible. It standardizes paths/labels for MIDAS and creates lightweight visual surrogates + metadata for CPTAC, enabling fast EDA, scoring, and model experiments without heavy I/O.</p>
+This standardizes paths/labels for MIDAS and creates lightweight visual surrogates + metadata for CPTAC, enabling fast EDA, scoring, and model experiments without heavy I/O.</p>
 
 </div>
 </div>
