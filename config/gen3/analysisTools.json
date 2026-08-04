@@ -1,4 +1,6 @@
 {
+  "title": "Jupyter Notebook Tutorials",
+  "description": "The Jupyter notebooks contained in this notebook viewer pull data from various sources to generate and output useful tables, charts, graphs, and models. This page contains HTML files for review purposes, but you can download executable versions of these notebooks from <a href='https://github.com/MIDRC/tutorial_notebooks'>MIDRC's GitHub Repository</a>. If you’d like to browse the machine learning-related algorithms and code being developed by MIDRC, please visit <a href='https://www.midrc.org/algorithms'> the algorithms page</a> on our website."
   "tools": [
     {
       "title": "Cohort Building and Data Access Using the MIDRC BDF Imaging Hub",
